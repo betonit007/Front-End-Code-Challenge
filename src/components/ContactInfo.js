@@ -23,10 +23,10 @@ class ContactInfo extends React.Component {
 
 
     render() {
-        const { name } = this.state.userInfo;
+        const { name, website, email } = this.state.userInfo;
         return (
-            <CardActions>
-                <CardContent>
+            <CardActions style={{backgroundColor: '#FAF0E6'}}>
+                <CardContent >
                     <Paper>
                         <Person style={{paddingTop:'.4em'}}/>
                         <Typography variant="subtitle1" component="span" style={{padding:'.3em'}}>
@@ -34,11 +34,11 @@ class ContactInfo extends React.Component {
                         </Typography>
                     </Paper>
                 </CardContent>
-                <Button size="small" color="primary" href="https://www.yahoo.com">
-                    Share
+                <Button size="small" color="primary" href={`mailto:${email}`}>
+                    {email}
                   </Button>
-                <Button size="small" color="primary">
-                    Learn More
+                <Button size="small" color="primary" href={`https://www.${website}`} target='_blank'>
+                    {website}
                   </Button>
             </CardActions>
         )
