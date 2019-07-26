@@ -3,7 +3,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import TypoGraphy from '@material-ui/core/TypoGraphy';
-
+import { Home, Book, AccountBox } from '@material-ui/icons'
 
 const NavBar = props => {
     return (
@@ -11,20 +11,20 @@ const NavBar = props => {
             <ListItem component='div'>
                 <ListItemText inset>
                     <TypoGraphy color='inherit' variant='h6'>
-                        Home 
+                       <Home/>
                     </TypoGraphy>
                 </ListItemText>
 
 
                 <ListItemText inset>
                     <TypoGraphy color='inherit' variant='h6'>
-                        Posts 
+                         <Book/>
                     </TypoGraphy>
                 </ListItemText>
 
                 <ListItemText inset>
                     <TypoGraphy color='inherit' variant='h6'>
-                        Contact
+                         <AccountBox />
                     </TypoGraphy>
                 </ListItemText>
             </ListItem>

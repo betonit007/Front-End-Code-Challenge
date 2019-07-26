@@ -1,4 +1,5 @@
 import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import TypoGraphy from '@material-ui/core/TypoGraphy';
@@ -8,6 +9,8 @@ import Posts from '../components/Posts';
 const App = () => {
     return (
         <div style={{maxWidth:'90%', margin:'0 auto'}}>
+
+           <CssBaseline />
            <AppBar color='primary' position='static'>
                <Toolbar>
                    <TypoGraphy variant='h6'
